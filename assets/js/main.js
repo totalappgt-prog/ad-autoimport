@@ -65,6 +65,17 @@
     $$("[data-year], #year").forEach(el => el.textContent = C.anio);
   }
 
+  /* ---------- Marca (permite renombrar desde config.js) ---------- */
+  function initBrand() {
+    const full = (C.nombre || "").trim();
+    if (!full) return;
+    const parts = full.split(/\s+/);
+    const mark = parts[0];
+    const name = parts.slice(1).join(" ");
+    $$(".brand-mark").forEach(e => e.textContent = mark);
+    $$(".brand-name").forEach(e => e.textContent = name);
+  }
+
   /* ---------- Floating WhatsApp ---------- */
   function initWaFloat() {
     if ($(".wa-float")) return;
@@ -137,6 +148,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    initBrand();
     initHeader();
     initConfigBindings();
     initWaFloat();
