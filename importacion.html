@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Importación de vehículos — a&d autoimport</title>
+  <meta name="description" content="Importación marítima desde $1,200 (entrega en 3 meses) y terrestre desde $2,300 (entrega en 8 días). Nos encargamos de todo el proceso.">
+  <meta name="theme-color" content="#1657D6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231657D6'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3Ea%26d%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="a&d autoimport — inicio">
+        <span><span class="brand-mark">a&amp;d</span> <span class="brand-name">autoimport</span>
+        <span class="brand-tag">Importación &amp; Servicio</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="importacion.html" class="active">Importación</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-primary nav-cta" href="encargo.html">Hacer pedido</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> / Importación</div>
+      <h1>Importación a tu medida</h1>
+      <p>Traemos tu vehículo desde el extranjero con dos modalidades claras y sin sorpresas. Tú eliges si prefieres ahorrar o recibirlo cuanto antes.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="import-grid">
+        <article class="import-card reveal">
+          <div class="import-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18l-2-5-4-2H7l-4 2z"/><path d="M5 17v2h2v-2M17 17v2h2v-2"/><path d="M8 10V7h8v3"/></svg></div>
+          <h3>Vía marítima (barco)</h3>
+          <p class="import-time">Entrega estimada: 3 meses</p>
+          <div class="import-price"><span class="cur">USD</span><b id="priceBarco">$1,200</b></div>
+          <p class="import-price-note">La opción más económica. Ideal si el tiempo no es una limitante.</p>
+          <ul class="import-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Compra y transporte marítimo gestionados</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Contenedor asegurado y consolidado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Seguimiento de la ruta en tiempo real</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Nacionalización y documentación incluidas</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="encargo.html?metodo=barco">Solicitar por vía marítima</a>
+        </article>
+
+        <article class="import-card featured reveal d1">
+          <div class="import-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg></div>
+          <h3>Vía terrestre</h3>
+          <p class="import-time">Entrega estimada: 8 días</p>
+          <div class="import-price"><span class="cur">USD</span><b id="priceTierra">$2,300</b></div>
+          <p class="import-price-note">La entrega más rápida. Perfecta si necesitas tu vehículo ya.</p>
+          <ul class="import-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Entrega garantizada en 8 días aproximados</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Transporte en camión cerrado y asegurado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Inspección y limpieza antes de la entrega</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Trámites y placas gestionados por nosotros</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="encargo.html?metodo=tierra">Solicitar por vía terrestre</a>
+        </article>
+      </div>
+
+      <div class="import-compare">
+        <table class="compare-table">
+          <thead>
+            <tr><th>Comparación</th><th>Vía marítima</th><th>Vía terrestre</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Costo de importación</td><td class="hi">$1,200 USD</td><td>$2,300 USD</td></tr>
+            <tr><td>Tiempo de entrega</td><td>3 meses</td><td class="hi">8 días</td></tr>
+            <tr><td>Tipo de transporte</td><td>Barco / contenedor</td><td>Camión cerrado</td></tr>
+            <tr><td>Ideal para</td><td>Presupuesto ajustado</td><td>Urgencia y rapidez</td></tr>
+            <tr><td>Seguimiento</td><td>Sí</td><td>Sí</td></tr>
+            <tr><td>Trámites incluidos</td><td>Sí</td><td>Sí</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="center" style="margin-top:20px;color:var(--muted);font-size:.88rem">
+        * Valores de referencia en USD sujetos a cotización según origen, tipo de vehículo, peso y disponibilidad. No incluyen impuestos de nacionalización específicos del país de destino.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="head-block center">
+        <span class="eyebrow"><span class="dot"></span> Pasos del proceso</span>
+        <h2 class="section-title">Así trabajamos tu importación</h2>
+        <p class="section-lead">Un proceso ordenado y transparente, con comunicación constante de nuestra parte.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Solicitud</h3><p>Recibimos tu pedido y definimos el vehículo, versión y modalidad de importación.</p></div>
+        <div class="step reveal d1"><h3>Cotización</h3><p>Te enviamos el precio final detallado con tiempos y forma de pago.</p></div>
+        <div class="step reveal d2"><h3>Compra y transporte</h3><p>Adquirimos el vehículo y coordinamos su traslado con seguro incluido.</p></div>
+        <div class="step reveal d3"><h3>Aduana y entrega</h3><p>Gestionamos trámites, placas y te entregamos el vehículo listo para rodar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="head-block center">
+        <span class="eyebrow"><span class="dot"></span> Preguntas frecuentes</span>
+        <h2 class="section-title">Dudas resueltas</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="card feature reveal"><h3>¿Qué porcentaje de anticipo?</h3><p>Manejamos un anticipo para iniciar la compra y el saldo contra entrega o según el plan que acordemos contigo.</p></article>
+        <article class="card feature reveal d1"><h3>¿Puedo elegir cualquier vehículo?</h3><p>Sí. Importamos cualquier marca, modelo, versión y color disponible en el mercado internacional.</p></article>
+        <article class="card feature reveal d2"><h3>¿El precio incluye impuestos?</h3><p>El costo de importación cubre el traslado y gestión. Los impuestos de nacionalización se cotizan según el vehículo.</p></article>
+        <article class="card feature reveal"><h3>¿Ofrecen financiamiento?</h3><p>Contamos con aliados financieros. Consulta las opciones de pago disponibles al momento de tu solicitud.</p></article>
+        <article class="card feature reveal d1"><h3>¿Qué pasa si el vehículo se daña?</h3><p>Todos los traslados van asegurados y realizamos inspección al recibir. Nos hacemos responsables del proceso.</p></article>
+        <article class="card feature reveal d2"><h3>¿Dan garantía?</h3><p>Sí. Ofrecemos garantía sobre la importación y sobre los servicios que realices con nuestro taller.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Cotiza tu importación sin compromiso</h2>
+        <p>Completa el formulario con el vehículo que buscas y te enviamos la mejor opción para ti.</p>
+        <div class="cta-actions">
+          <a class="btn btn-white btn-lg" href="encargo.html">Solicitar cotización</a>
+          <a class="btn btn-wa btn-lg" data-wa="Hola, quiero cotizar una importación de vehículo.">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark">a&amp;d</span> <span class="brand-name">autoimport</span></a>
+          <p>Importación, venta y servicio de vehículos modernos. De la elección a la entrega, y todo el cuidado después.</p>
+          <div class="footer-social">
+            <a data-ad-href="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1.1.3-1.8 1.9-1.8H17V1.6C16.7 1.6 15.6 1.5 14.3 1.5 11.6 1.5 9.8 3.1 9.8 6.3V9H7v4h2.8v9z"/></svg></a>
+            <a data-ad-href="instagram" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a data-ad-href="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.4 2.3 1.9 4 4.3 4.3v3c-1.6 0-3-.5-4.3-1.3v6.2a5.9 5.9 0 1 1-5.9-5.9c.3 0 .6 0 .9.1v3.1a2.8 2.8 0 1 0 2 2.7V3z"/></svg></a>
+            <a data-ad-href="youtube" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18.2 5.6 12 5.6 12 5.6s-6.2 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.7.5 7.9.5 7.9.5s6.2 0 7.9-.5a3 3 0 0 0 2.1-2.1c.3-1.9.4-3.8.4-3.8s0-1.9-.4-3.8zM10 15V9l5.2 3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="catalogo.html">Catálogo de vehículos</a></li>
+            <li><a href="importacion.html">Importación y precios</a></li>
+            <li><a href="servicios.html">Servicios y taller</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="encargo.html">Hacer un pedido</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html#carwash">Carwash y limpieza profunda</a></li>
+            <li><a href="servicios.html#polarizado">Polarizado profesional</a></li>
+            <li><a href="servicios.html#enderezado">Enderezado y pintura</a></li>
+            <li><a href="servicios.html#mecanica">Mecánica general</a></li>
+            <li><a href="servicios.html#sala-vip">Sala de espera VIP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-ad="direccion"></span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a data-ad-href="tel"><span data-ad="telefono"></span></a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><a data-ad-href="email"><span data-ad="email"></span></a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-ad="horario"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year></span> <span data-ad="nombre"></span>. Fundada por Alejandro &amp; Daniel.</p>
+        <p>Hecho con orgullo en <span data-ad="pais"></span>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
