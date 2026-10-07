@@ -1,4 +1,4 @@
-# a&d autoimport — sitio estático servido con nginx
+# A&D AutoImport — sitio estático servido con nginx
 # Compatible con Coolify (build desde Dockerfile, puerto 80)
 FROM nginx:1.27-alpine
 

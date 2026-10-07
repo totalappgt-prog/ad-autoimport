@@ -1,5 +1,5 @@
 /* =========================================================
-   a&d autoimport — Vehículos destacados (inicio)
+   A&D AutoImport — Vehículos destacados (inicio)
    ========================================================= */
 (function () {
   "use strict";

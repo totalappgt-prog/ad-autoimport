@@ -1,5 +1,5 @@
 /* =========================================================
-   a&d autoimport — Catálogo de vehículos
+   A&D AutoImport — Catálogo de vehículos
    Precios en USD (referenciales, sujetos a cotización).
    ========================================================= */
 window.VEHICULOS = [

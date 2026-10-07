@@ -1,5 +1,5 @@
 /* =========================================================
-   a&d autoimport — Catálogo: render, filtros, búsqueda, modal
+   A&D AutoImport — Catálogo: render, filtros, búsqueda, modal
    ========================================================= */
 (function () {
   "use strict";

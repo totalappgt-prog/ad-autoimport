@@ -1,8 +1,8 @@
 /* =========================================================
-   a&d autoimport — Configuración general (edita aquí tus datos)
+   A&D AutoImport — Configuración general (edita aquí tus datos)
    ========================================================= */
 window.AD_CONFIG = {
-  nombre: "a&d autoimport",
+  nombre: "A&D AutoImport",
   eslogan: "Importación y venta de vehículos",
   pais: "Guatemala",
   fundadores: ["Alejandro", "Daniel"],
@@ -30,5 +30,5 @@ window.AD_CONFIG = {
   },
 
   /* --- Mensaje por defecto de WhatsApp --- */
-  waSaludo: "Hola a&d autoimport, me gustaría recibir información."
+  waSaludo: "Hola A&D AutoImport, me gustaría recibir información."
 };
