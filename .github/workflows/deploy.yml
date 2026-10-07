@@ -1,0 +1,28 @@
+name: Deploy a Coolify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: coolify-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disparar despliegue en Coolify
+        env:
+          COOLIFY_URL: ${{ secrets.COOLIFY_URL }}
+          COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
+          COOLIFY_APP_UUID: ${{ secrets.COOLIFY_APP_UUID }}
+        run: |
+          echo "Solicitando despliegue de $COOLIFY_APP_UUID en $COOLIFY_URL"
+          curl --fail --silent --show-error \
+            -X POST "$COOLIFY_URL/api/v1/deploy?uuid=$COOLIFY_APP_UUID" \
+            -H "Authorization: Bearer $COOLIFY_TOKEN" \
+            -H "Accept: application/json"
+          echo ""
+          echo "Despliegue solicitado correctamente."
